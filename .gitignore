@@ -1,0 +1,7 @@
+env/*
+node_modules/*
+dist/*
+src/script.ts
+.editorconfig
+/.vscode
+/workspace.*
