@@ -1,6 +1,6 @@
 {
   "name": "@jeevansirela/cookie-analyzer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command line script to calculate most frequent cookies from huge file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

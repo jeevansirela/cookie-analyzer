@@ -1,10 +1,8 @@
 import { parseLine, parseQueryDate } from "@helpers/parser";
 import { CookieAnalytics } from "@models/cookie_analytics";
 import { once } from "events";
-import { createReadStream, read } from "fs";
-import path from "path";
+import { createReadStream } from "fs";
 import { createInterface, Interface } from "readline";
-import * as csv from "@fast-csv/parse";
 /**
  *
  * @param fileName input filename
