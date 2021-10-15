@@ -1,16 +1,17 @@
 {
   "name": "@jeevansirela/cookie-analyzer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command line script to calculate most frequent cookies from huge file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": " npm run build-ts && npm test",
+    "build": " npm run build-ts",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
     "debug": "npm run build && npm run watch-debug",
-    "advanced": "node ./src/index.ts advanced"
+    "advanced": "node ./src/index.ts advanced",
+    "prepare" : "npm run build"
   },
   "author": "Jeevan Sirela",
   "license": "ISC",
