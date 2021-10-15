@@ -5,3 +5,6 @@ src/script.ts
 .editorconfig
 /.vscode
 /workspace.*
+/*.csv
+
+

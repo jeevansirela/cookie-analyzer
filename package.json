@@ -1,7 +1,7 @@
 {
-  "name": "cookie_analyzer",
+  "name": "@jeevansirela/cookie-analyzer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Command line script to calculate most frequent cookies from huge file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Jeevan Sirela",
   "license": "ISC",
   "bin": {
-    "analyze-cookie": "./dist/index.js"
+    "analyze-cookie": "dist/index.js"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
@@ -38,5 +38,13 @@
     "@handlers": "dist/handlers",
     "@models": "dist/models",
     "@builders": "dist/builders"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeevansirela/cookie-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeevansirela/cookie-analyzer/issues"
+  },
+  "homepage": "https://github.com/jeevansirela/cookie-analyzer#readme"
 }
