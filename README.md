@@ -17,6 +17,17 @@ Cookie Analyzer is CLI executable to get the most frequent cookie occuring in hu
 
 ## How to Install
 
+```Node
+npm i @jeevansirela/cookie-analyzer -g
+```
+
+## How to Build and Test
+
+- Clone the project
+- Install all dependencies including dev dependencies
+- Build using `npm run build` which includes tests too
+- Can run tests separately using `npm run test`
+
 ## How To Run
 
 ```Node
