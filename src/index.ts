@@ -4,7 +4,12 @@ import { Command } from "commander";
 import { analyzeFile } from "@handlers/analyzer";
 
 /**
+ * Handler function for the command analayze-cookie
  *
+ * TODO:
+ * Add -n flag to just give n number of files as output
+ * Add -k flag to get top k most frequent cookies
+ * With -n flag if the output lines are high, save it to a file
  */
 export const processCookieFile = () => {
   const program = new Command();
@@ -25,7 +30,7 @@ export const processCookieFile = () => {
     })
     .catch((err) => console.log(err.message));
 };
-
+// restricting callable through this module not by importing to other modules
 if (require.main === module) {
   processCookieFile();
 }

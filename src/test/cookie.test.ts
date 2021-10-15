@@ -1,5 +1,5 @@
 import { CookieAnalytics } from "@models/cookie_analytics";
-import { CookieAnalyticsBuilder } from "@builders/CookieAnalyticsBuilder";
+import { CookieAnalyticsBuilder } from "@builders/cookie_analytics_builder";
 
 test("Check Cookie Analysis object initialization with correct attributes", () => {
   let cookieAnalytics = new CookieAnalytics(11234);
