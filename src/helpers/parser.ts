@@ -3,7 +3,7 @@
  * @param dateString Query Date
  * @returns formats date first and parses it
  */
-export function parseQueryDate(dateString: string) {
+export function parseQueryDate(dateString: string): number {
   let formattedDateString = formatQueryDate(dateString);
   return parseDate(formattedDateString);
 }
@@ -13,7 +13,7 @@ export function parseQueryDate(dateString: string) {
  * @param line
  * @returns  splits cookie and timestamp, converts timestamp to epoch and returns it.
  */
-export function parseLine(line: string) {
+export function parseLine(line: string): Array<any> {
   let [word, dateString] = line.split(",").map((word) => word.trim());
   let formattedDate = parseDate(dateString);
   return [word, formattedDate];
@@ -23,7 +23,7 @@ export function parseLine(line: string) {
  * @param dateString
  * @returns adds extra padding. ex: 7 in date is converted to 07
  */
-function formatQueryDate(dateString: string) {
+function formatQueryDate(dateString: string): string {
   return dateString
     .split("-")
     .map((string) => string.padStart(2, "0"))

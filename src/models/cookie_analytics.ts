@@ -59,7 +59,7 @@ export class CookieAnalytics {
    * getTopCookiesByFrequency
    * @returns list of max frequency and top cookies list
    */
-  getTopCookiesByFrequency(): any[] {
+  getTopCookiesByFrequency(): Array<number | any> {
     return [this.#maxFrequency, this.#maxFrequencyList];
   }
 }

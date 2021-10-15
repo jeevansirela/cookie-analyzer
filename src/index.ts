@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import "module-alias/register";
-import { Command } from "commander";
+import { Command, OptionValues } from "commander";
 import { analyzeFile } from "@handlers/analyzer";
 
 /**
@@ -19,7 +19,7 @@ export const processCookieFile = () => {
     .option("-d, --date <string>", "date");
 
   program.parse(process.argv);
-  const options = program.opts();
+  const options: OptionValues = program.opts();
 
   analyzeFile(options.file, options.date)
     .then((result: any) => {

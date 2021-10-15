@@ -42,7 +42,7 @@ export async function analyzeFile(fileName: string, queryDate: string) {
     });
     await once(readLine, "close");
     let completionTime: number = new Date().getTime();
-    let [frequency, frequentCookies] =
+    let [frequency, frequentCookies]: Array<number | Array<string>> =
       cookieAnalyzer.getTopCookiesByFrequency();
     return {
       timeElapsed: completionTime - startTime,
